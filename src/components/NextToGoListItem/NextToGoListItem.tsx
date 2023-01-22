@@ -8,7 +8,7 @@ type Props = { race: ListRace };
 const _NextToGoListItem = ({ race }: Props): JSX.Element => {
   return (
     <div className="item">
-      <div className="race-name">
+      <div className="race-name" data-testid={`cypress-race-name`}>
         <b className="race-number">R{race.raceNumber}</b>
         <p>{race.meetingName}</p>
       </div>
